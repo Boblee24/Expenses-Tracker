@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker </h1>
+        </header>
+        <nav>
+            <div class="head">
+                <h2>Add A New Item</h2>
+            </div>
+            <div class="tracker">
+                <form id="expense_tracker">
+                    <div id="trackers">
+                        <div class="form1">
+                            <label for="payment"> Type:</label>
+                        <select name="payment" id="payment_method">
+                            <option value="cash">Cash</option>
+                            <option value="debit_card">Debit card</option>
+                        </select>
+                        </div>
+                        <div class="form2">
+                            <label for="date" id="input2">Date:</label>
+                        <input type="date" name="date" id="input_date">
+                        </div>
+                        <div class="form3">
+                            <label for="name">Name:</label>
+                        <input type="text" name="name" id="input_name">
+                        </div>
+                        <div class="form4">
+                            <label for="amount">Amount:</label>
+                        <input type="text" name="amount" id="input_amount">
+                        </div>
+                    </div>
+    
+                    <div class="submit">
+                        <input type="submit" value="Add Expense">
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <main>
+            <div class="expense">
+                <table id="table">
+                    <tr>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <!-- <th>Amount</th> -->
+                    </tr>
+                    <!-- <tr id="table_data" class='tabledata'>
+                        <td><input type="text" class="td1" value="Debit card" readonly></td>
+                        <td><input type="text" class="td2" value="Cupcakes" readonly></td>
+                        <td><input type="text" class="td3" value="12/12/22" readonly></td>
+                        <td><input type="text" class="td4" value="$129" readonly><img src="images/exit.svg" alt="" class='delete'></td>
+                    </tr> -->
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- <div class="expense">
+    <div class="heading">
+        <h3>Type</h3>
+        <h3>Name</h3>
+        <h3>Date</h3>
+        <h3>Amount</h3>
+    </div>
+    <div class="expense_input">
+        <input type="text" value="cash" readonly>
+        <input type="text" value="Sneakers" readonly>
+        <input type="text" value="12/12/12" readonly>
+        <input type="text" value="$100" readonly>
+    </div>
+</div> -->

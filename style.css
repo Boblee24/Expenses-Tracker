@@ -1,0 +1,138 @@
+:root {
+    --main : #F2F2F2;
+    --primary: #0059b3;
+    --secondary: #0080ff;
+    --dark :  #3c4854;
+    --light :  #4c195c;
+    --shadow : 0 1px 3px rgba(0, 0, 0, 0.2);
+    --input: #1e242a;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input, select {
+    /* appearance:initial; */
+    border: none;
+    outline: none;
+    /* background: blue; */
+    /* width: 0; */
+}
+body {
+    background: var(--main);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: red; */
+    
+}
+
+
+ h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0 .5rem 0;
+}
+#trackers {
+    display: grid;
+    /* background-color: blue; */
+    max-width: 800px;
+    /* gap: 1rem; */
+    gap: 0px 0px;
+    background-color: var(--primary);
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    /* justify-: center; */
+} 
+nav form input, form select {
+    width: 300px;
+    cursor: pointer;
+}
+
+nav input:not([type=submit]), select {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--primary);
+}
+
+input[type=submit] {
+    display: block;
+    margin: 1rem auto ;
+    width: 120px;
+    padding: .5rem .1rem;
+    border-radius: .5rem;
+    background-color: var(--dark);
+    color: var(--primary);
+    font-size: .8rem;
+    text-transform: uppercase;
+    transition: .4s;
+    cursor:pointer;
+    font-weight: bolder;
+}
+input[value]{
+    font-weight: 500;
+}
+input[type=submit]:hover {
+    scale: 1.1;
+}
+
+@media only screen and (min-width:550px){
+    #trackers {
+        grid-template-columns: 2fr 2fr;
+
+    }
+    nav form input, form select {
+        width: 72%;
+    }
+}
+table, th, tr {
+    /* border: 1px solid var(--primary); */
+    padding: 0;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+th, td {
+    padding: .6rem;
+}
+ table {
+    width: 100%;
+    /* border: 1px solid var(--primary); */
+    border-collapse: collapse;
+}
+
+th {
+    background: var(--input);
+    color: var(--primary);
+    text-align: center;
+    /* margin-left: rem; */
+}
+
+tr input {
+    text-align: center;
+    background-color: var(--primary);
+}
+
+tr {
+    background: var(--primary);
+}
+
+.delete {
+    position: absolute;
+    width: 1rem;
+    /* border: 1px var(--input) solid; */
+    /* padding: .6rem; */
+    transition: .7s;
+}
+
+.delete:hover {
+    scale: 1.2;
+}
