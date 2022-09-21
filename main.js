@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        const input_1 = input1.innerText;
+        const input_1 = input1.value;
         const input_2 = input2.value;
         const input_3 = input3.value;
         const input_4 = input4.value
@@ -77,6 +77,7 @@ window.addEventListener('load', () => {
         input_4_td_el.setAttribute('readonly', 'readonly')
         
         const remove = document.createElement('img')
+        remove.src = 'images/exit.svg'
         remove.classList.add('delete')
         
         input_4_td.appendChild(input_4_td_el)
@@ -88,6 +89,9 @@ window.addEventListener('load', () => {
         table_data.appendChild(input_4_td)
 
         table.appendChild(table_data)
+        remove.addEventListener('click', () => {
+            table.removeChild(table_data)
+        })
 
         //input1.value = ''
         input2.value = ''
