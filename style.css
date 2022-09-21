@@ -27,8 +27,17 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    min-width: 0;
     /* background-color: red; */
     
+}
+td[value] {
+    text-align: center;
+    color: red;
+} 
+.td1 {
+    color: red;    
+    font-size: ;
 }
 
 
@@ -96,15 +105,20 @@ input[type=submit]:hover {
 }
 table, th, tr {
     /* border: 1px solid var(--primary); */
-    padding: 0;
+    /* padding: 0; */
     padding-top: .6rem;
     padding-bottom: .6rem;
+    min-width: 0;
+    /* width: 100%; */
 }
-th, td {
+td {
     padding: .6rem;
+    min-width: 0;
+    width: 100%;
 }
  table {
     width: 100%;
+    /* min-width: 0; */
     /* border: 1px solid var(--primary); */
     border-collapse: collapse;
 }
@@ -119,10 +133,13 @@ th {
 tr input {
     text-align: center;
     background-color: var(--primary);
+    /* min-width: 0; */
+    /* width: 100%; */
 }
 
 tr {
     background: var(--primary);
+    width: 100%;
 }
 
 .delete {
@@ -131,6 +148,7 @@ tr {
     /* border: 1px var(--input) solid; */
     /* padding: .6rem; */
     transition: .7s;
+    margin-left: -.7rem;
 }
 
 .delete:hover {

@@ -41,9 +41,10 @@ window.addEventListener('load', () => {
 
         const input_1_td = document.createElement('td')
         const input_1_td_el = document.createElement('input')
-        input_1_td_el.classList.add('tdl')
+        input_1_td_el.classList.add('.tdl')
         input_1_td_el.type = 'text'
         input_1_td_el.value = input_1
+        // input_1_td_el.add.classList('td1')
         input_1_td_el.setAttribute('readonly', 'readonly')
 
         input_1_td.appendChild(input_1_td_el)
