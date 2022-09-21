@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         const input_3 = input3.value;
         const input_4 = input4.value
 
-        if()
+        
 
         if(input_2 == '') {
             alert('You need to fill out')
